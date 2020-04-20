@@ -6,9 +6,9 @@
 
 **II.** Capability에서 Access Wifi Information 추가
 
-**III.***  WifiVC.swift 파일 copy & paste 
+**III.**  WifiVC.swift 파일 copy & paste 
 
-***IV.***  쓰고자하는 ViewController에서 `WifiVC` 를 상속 받고, `getWifi()` 함수를 호출하면 된다.
+**IV.**  쓰고자하는 ViewController에서 `WifiVC` 를 상속 받고, `getWifi()` 함수를 호출하면 된다.
 
         //
         //  ViewController.swift
