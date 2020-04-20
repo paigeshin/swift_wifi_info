@@ -22,6 +22,7 @@ class WifiVC: UIViewController, CLLocationManagerDelegate {
     
     
     func getWifi() -> String? {
+           //ios 13버전 이상
         if #available(iOS 13.0, *) {
             let status = CLLocationManager.authorizationStatus()
             if status == .authorizedWhenInUse {
@@ -34,7 +35,7 @@ class WifiVC: UIViewController, CLLocationManagerDelegate {
                 locationManager.delegate = self
                 locationManager.requestWhenInUseAuthorization()
             }
-            //ios 13버전
+            //ios 13버전 이전
         } else {
             let currentNetworkInfos: Array<NetworkInfo>?  = SSID.fetchNetworkInfo()
             if let ssid: String = currentNetworkInfos?.first?.ssid {
