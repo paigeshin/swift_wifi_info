@@ -13,7 +13,7 @@ class ViewController: WifiVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(getWifi())
+        print(getCurrentSSID())
     }
 
 }

@@ -21,8 +21,8 @@ class WifiVC: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func getWifi() -> String? {
-           //ios 13버전 이상
+    func getCurrentSSID() -> String? {
+    //ios 13버전 이상
         if #available(iOS 13.0, *) {
             let status = CLLocationManager.authorizationStatus()
             if status == .authorizedWhenInUse {
